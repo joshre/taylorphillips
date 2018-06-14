@@ -1,0 +1,72 @@
+$link-color: $blue;
+
+$default-font: 'Futura', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif !default;
+
+$base-serif-font:$default-font;
+$base-sans-font:$default-font;
+$heading-font-family:$default-font;
+
+$heading-font-weight: 600;
+
+$max-width: (
+	xs: 	480px,
+	xsm: 	640px,
+	sm: 	768px,
+	smd: 	834px,
+	md: 	992px,
+	lg: 	1200px,
+	xl: 	1640px
+);
+
+$max-wrap: 1280px;
+
+$base-animation: cubic-bezier(0.4, 0.01, 0.165, 0.99);
+
+$base-font-color: #024958;
+$base-font-size: 1.1em;
+$base-padding: 1em;
+$base-line-height: 1.6;
+
+$base-border-radius: 8px;
+$gr:1.610833;
+
+$grid:1;
+
+//
+// Media Queries & Breakpoints
+// 
+
+// Extra small screen / phone
+$screen-xs:                  map-get($max-width, xs) !default;
+
+$screen-xsm:                 map-get($max-width, xsm) !default;
+
+// Small screen / tablet
+$screen-sm:                  map-get($max-width, sm) !default;
+
+// Small screen / tablet
+$screen-smd:                 map-get($max-width, smd) !default;
+
+// Medium screen / desktop
+$screen-md:                  map-get($max-width, md) !default;
+
+// Large screen / wide desktop
+$screen-lg:                  map-get($max-width, lg) !default;
+
+// Monster Screen
+$screen-xl:                  map-get($max-width, xl) !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-xs - 1) !default;
+$screen-xsm-max:             ($screen-xsm - 1) !default;
+$screen-sm-max:              ($screen-sm - 1) !default;
+$screen-smd-max:             ($screen-smd - 1) !default;
+$screen-md-max:              ($screen-md - 1) !default;
+$screen-lg-max:              ($screen-lg - 1) !default;
+
+$max-xs:  	new-breakpoint(max-width $screen-xs-max 12);
+$max-xsm: 	new-breakpoint(max-width $screen-xsm-max 12);
+$max-sm: 	new-breakpoint(max-width $screen-sm-max 12);
+$max-smd: 	new-breakpoint(max-width $screen-smd-max 12);
+$max-md:  	new-breakpoint(max-width $screen-md-max  6);
+$max-lg:  	new-breakpoint(max-width $screen-lg-max  6);

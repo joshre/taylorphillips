@@ -1,0 +1,50 @@
+main {
+    padding: 0 1rem;
+    margin: 1rem auto;
+
+    @include media($screen-xs) {
+        padding: 0;
+        max-width: 90%;
+        width: 700px;
+        margin: 3rem auto;
+    }
+}
+
+header {
+    width: 100%;
+    background-color: $link-color;
+    display: block;
+    padding: 1em 1em;
+
+    a {
+        color: white;
+    }
+
+    @include row;
+
+    .hdr-logo-link {
+        @include span-columns(2 of 12);
+    }
+
+    nav {
+        text-align: right;
+
+        @include span-columns(8 of 12);
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+
+            li {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $base-font-color;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}

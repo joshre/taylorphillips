@@ -1,0 +1,74 @@
+
+.spacing--vert-half{padding-top:.5em * $grid; padding-bottom: .5em * $grid;}
+.spacing--vert-1{padding-top:1em * $grid; padding-bottom: 1em * $grid;}
+.spacing--vert-2{padding-top:2em * $grid; padding-bottom: 2em * $grid;}
+.spacing--vert-3{padding-top:3em * $grid; padding-bottom: 3em * $grid;}
+.spacing--vert-4{padding-top:4em * $grid; padding-bottom: 4em * $grid;}
+.spacing--vert-5{padding-top:5em * $grid; padding-bottom: 5em * $grid;}
+.spacing--vert-6{padding-top:6em * $grid; padding-bottom: 6em * $grid;}
+
+@include media($screen-sm) {
+	.spacing--dsk-vert-1{padding-top:1em * $grid; padding-bottom: 1em * $grid;}
+	.spacing--dsk-vert-2{padding-top:2em * $grid; padding-bottom: 2em * $grid;}
+	.spacing--dsk-vert-3{padding-top:3em * $grid; padding-bottom: 3em * $grid;}
+	.spacing--dsk-vert-4{padding-top:4em * $grid; padding-bottom: 4em * $grid;}
+	.spacing--dsk-vert-5{padding-top:5em * $grid; padding-bottom: 5em * $grid;}
+	.spacing--dsk-vert-6{padding-top:6em * $grid; padding-bottom: 6em * $grid;}
+}
+
+.spacing--horiz-1{padding-left:1em * $grid; padding-right: 1em * $grid;}
+.spacing--horiz-2{padding-left:2em * $grid; padding-right: 2em * $grid;}
+.spacing--horiz-3{padding-left:3em * $grid; padding-right: 3em * $grid;}
+.spacing--horiz-4{padding-left:4em * $grid; padding-right: 4em * $grid;}
+.spacing--horiz-5{padding-left:5em * $grid; padding-right: 5em * $grid;}
+.spacing--horiz-6{padding-left:6em * $grid; padding-right: 6em * $grid;}
+
+@include media($screen-sm) {
+	.spacing--dsk-horiz-1{padding-left:1em * $grid; padding-right: 1em * $grid;}
+	.spacing--dsk-horiz-2{padding-left:2em * $grid; padding-right: 2em * $grid;}
+	.spacing--dsk-horiz-3{padding-left:3em * $grid; padding-right: 3em * $grid;}
+	.spacing--dsk-horiz-4{padding-left:4em * $grid; padding-right: 4em * $grid;}
+	.spacing--dsk-horiz-5{padding-left:5em * $grid; padding-right: 5em * $grid;}
+	.spacing--dsk-horiz-6{padding-left:6em * $grid; padding-right: 6em * $grid;}
+}
+
+.spacing--gutter {
+	padding-right: 1.7em * $grid;
+	padding-left: 1.7em * $grid;
+
+    @include media($screen-sm) {
+	padding-right: 3em * $grid;
+	padding-left: 3em * $grid;
+    }
+}
+.spacing--mob-bot-1{@include media($max-sm){padding-bottom: 1em * $grid;}}
+.spacing--mob-bot-2{@include media($max-sm){padding-bottom: 2em * $grid;}}
+.spacing--mob-bot-3{@include media($max-sm){padding-bottom: 3em * $grid;}}
+.spacing--mob-bot-4{@include media($max-sm){padding-bottom: 4em * $grid;}}
+
+.spacing--bot-1{padding-bottom: 1em * $grid;}
+.spacing--bot-2{padding-bottom: 2em * $grid;}
+.spacing--bot-3{padding-bottom: 3em * $grid;}
+.spacing--bot-4{padding-bottom: 4em * $grid;}
+
+.spacing--gutter-dsk {
+
+	@include media($screen-sm){
+	padding-right: .7em * $grid;
+	padding-left: .7em * $grid;
+}
+
+    @include media($screen-sm) {
+	padding-right: 3em * $grid;
+	padding-left: 3em * $grid;
+    }
+}
+
+.spacing--gutter-mob {
+	@include media($max-sm){
+	padding-right: .7em * $grid;
+	padding-left: .7em * $grid;
+}
+
+ 
+}

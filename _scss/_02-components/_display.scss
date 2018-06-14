@@ -1,0 +1,51 @@
+.dsk--hide {
+    @include media($screen-sm) {
+        display: none !important;
+    }
+}
+
+.mobile--hide {
+    @include media($max-sm) {
+        display: none !important;
+    }
+}
+
+.large--hide {
+    @include media($screen-md) {
+        display: none !important;
+    }
+}
+
+.medium--hide {
+    @include media($max-md) {
+        display: none !important;
+    }
+}
+
+.margin--center {
+    margin: 0 auto;
+    display: block;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.modal--center {
+    transform: translateY(100%) translateX(-50%);
+    position: absolute;
+    width: 60vw;
+    margin: 0 auto;
+    left: 50%;
+    top: 50%;
+    transition: transform 0.3s $base-animation;
+
+    &.open {
+        transition: transform 0.3s $base-animation;
+        transform: translateY(-50%) translateX(-50%);
+    }
+}
+
+.relative {
+    position: relative;
+}

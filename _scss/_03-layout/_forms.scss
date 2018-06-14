@@ -1,0 +1,180 @@
+$formbordercolor: black;
+$formtextcolor: black;
+$formplaceholdercolor: blue;
+
+$forminvalidbackground: red;
+$forminvalidcolor: white;
+
+$formsuccessbackground: orange;
+$formsuccesstextcolor: white;
+
+$formbuttonbackground: orange;
+$formbuttoncolor: white;
+
+fieldset {
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    font-weight: 600;
+    padding: 0;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+}
+
+input,
+select,
+textarea,
+#{$all-text-inputs},[type="submit"] {
+    font-size: 1.1rem;
+    font-family: $base-sans-font;
+    color: $formtextcolor;
+    appearance: none;
+
+    border: 1px solid $formbordercolor;
+    border-radius: 0 !important;
+    box-shadow: none;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    transition: color .2s ease-in-out;
+    letter-spacing: 1px;
+
+    &:focus {
+        transition: color .2s ease-in-out;
+
+        // border-color: map-get($green, main);
+        box-shadow: 0;
+        outline: none;
+    }
+
+    &::-webkit-input-placeholder {
+        transition: color .2s ease-in-out;
+        color: $formplaceholdercolor;
+    }
+
+    &:-moz-placeholder {
+        transition: color .2s ease-in-out;
+
+        /* Firefox 18- */
+        color: $formplaceholdercolor;
+    }
+
+    &::-moz-placeholder {
+        transition: color .2s ease-in-out;
+
+        /* Firefox 19+ */
+        color: $formplaceholdercolor;
+    }
+
+    &:-ms-input-placeholder {
+        transition: color .2s ease-in-out;
+        color: $formplaceholdercolor;
+    }
+
+    &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 30px white inset;
+        background: transparent;
+    }
+}
+
+textarea {
+    resize: vertical;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    display: inline;
+}
+
+[type="file"] {
+    width: 100%;
+}
+
+select {
+    width: 100%;
+}
+
+// [type="submit"] {
+//     display: block;
+//     appearance: none;
+//     border: none;
+// }
+
+.screenreader, .screen-reader-text {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.wpcf7-form-control-wrap {
+    width: 100%;
+    margin-bottom: 1em;
+    display: block;
+
+    input,
+    select,
+    textarea,
+    #{$all-text-inputs} {
+        width: 100%;
+    }
+}
+
+span.wpcf7-not-valid-tip {
+    color: $forminvalidcolor;
+    background-color: $forminvalidbackground;
+    border-left: 1px solid $formbordercolor;
+    border-right: 1px solid $formbordercolor;
+    border-bottom: 1px solid $formbordercolor;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 5px 15px;
+    display: block;
+}
+
+div.wpcf7-validation-errors {
+    background-color: $forminvalidbackground;
+    color: $forminvalidcolor;
+    border: none;
+    padding: 5px 15px;
+}
+
+.required + span {
+    input {}
+
+    position: relative;
+
+    &:after {
+        content: '*';
+        display: block;
+        height: 10px;
+        width: 10px;
+        position: absolute;
+        top: 0;
+        right: 8px;
+        color: red;
+    }
+}
+
+div.wpcf7-mail-sent-ok {
+    background: $formsuccessbackground;
+    border: 0;
+    padding: 15px;
+    margin: 0;
+    color: $formsuccesstextcolor;
+}
+
+button, [type="submit"] {
+    background-color: $formbuttonbackground;
+    color: $formbuttoncolor;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}

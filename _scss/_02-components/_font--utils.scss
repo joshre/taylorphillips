@@ -1,0 +1,110 @@
+.font--medium {
+    font-size: 1.5rem;
+}
+
+.font--medium-dsk {
+    @include media($screen-sm) {
+        font-size: 1.1em;
+    }
+}
+
+.font--large {
+    font-size: 1.4rem;
+
+    @include media($screen-sm) {
+        font-size: 1.7rem;
+    }
+}
+
+p.font--large {
+    margin-bottom: 1.5em;
+}
+
+.font--sans {
+    font-family: $base-sans-font;
+}
+
+.font--larger {
+    font-size: 2.5em;
+}
+
+.font--small {
+    font-size: .85em;
+}
+
+.font--tiny {
+    font-size: .7em;
+}
+
+.font--thin {
+    font-weight: 100 !important;
+}
+
+.font--semi-bold {
+    font-weight: 500 !important;
+}
+
+.font--standard {
+    font-weight: 400 !important;
+}
+
+.font--bold {
+    font-weight: 600 !important;
+}
+
+.font--italic {
+    font-style: italic;
+}
+
+.font--normal {
+    font-style: normal !important;
+}
+
+.text--center {
+    text-align: center !important;
+}
+
+.text--right {
+    text-align: right !important;
+}
+
+.text--uppercase {
+    text-transform: uppercase !important;
+}
+
+.text--lowercase {
+    text-transform: lowercase !important;
+}
+
+.text--capitalize {
+    text-transform: capitalize !important;
+}
+
+.decoration--no {
+    text-decoration: none !important;
+}
+
+.line--1 {
+    line-height: 1;
+}
+
+.letter--1 {
+    letter-spacing: 1px;
+}
+
+.letter--2 {
+    letter-spacing: 2px;
+}
+
+.letter--3 {
+    letter-spacing: 3px;
+}
+
+hr {
+    &.inline {
+        width: 160px;
+    }
+
+    border: 0;
+    border-bottom: 1px solid;
+}
