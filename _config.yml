@@ -39,6 +39,7 @@ plugins:
 #   - vendor/ruby/
 
 albumart: app/images/just-like-the-movies-cover.jpg
+albumartsmall: app/images/just-like-the-movies-cover-1200.jpg
 
 apple: https://itunes.apple.com/us/album/just-like-the-movies-single/1391232367
 google: https://play.google.com/store/music/album/Taylor_Phillips_Just_Like_the_Movies?id=Bszjmml35ipepx5fhc5uvja5hea&hl=en
